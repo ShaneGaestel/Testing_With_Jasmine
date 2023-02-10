@@ -29,5 +29,3 @@ let nameInput = document.getElementById('username');
 function submitForm() {
     usernames.push(Input.value);
 }
-
-const input = ('usernames')
