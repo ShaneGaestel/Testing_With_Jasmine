@@ -1,3 +1,4 @@
+
 describe('calulateTaxes tests', function () {
     it('should calculate the high tax bracket', function () {
         expect(calcaulateTaxes(50000)).toEqual(12500);
@@ -35,3 +36,19 @@ describe('remove tests', function () {
     }) 
 })
 
+describe('submitForm() tests', () => {
+    it('saves input val to usernames array', () => {
+        input.value = '';
+        submitForm();
+        expect(usernames.lenght).toBe(1)
+        expect(usernames).toContain('')
+
+    })
+})
+afterEach(function(){
+   //input.value = '';
+   usernames = []; 
+})
+beforeEach(() => {
+    console.log('BEFORE!')
+})
