@@ -9,3 +9,7 @@ function calcaulateTaxes(income) {
         return income * 0.15;
     }
 }
+
+function removeDupes(values){
+    return [...new Set(values)]
+}

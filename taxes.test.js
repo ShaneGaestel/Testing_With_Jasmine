@@ -5,6 +5,10 @@ it('should calculate the high tax bracket', function () {
    })
 it('should calculate the low tax bracket', function () {
     expect(calcaulateTaxes(10000)).toEqual(1500);
-    expect(calcaulateTaxes(1000)).tobe(150);
-    expect(calcaulateTaxes(0)).tobe(0);
+    expect(calcaulateTaxes(1000)).toBe(150);
+    expect(calcaulateTaxes(0)).toBe(0);
+})
+
+it('should remove duplicates from an array', function(){
+    expect(removeDupes([1,1,2,2,3,4])).toBe([1,2,3,4])
 })
