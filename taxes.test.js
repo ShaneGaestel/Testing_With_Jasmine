@@ -5,6 +5,6 @@ it('should calculate the high tax bracket', function () {
    })
 it('should calculate the low tax bracket', function () {
     expect(calcaulateTaxes(10000)).toEqual(1500);
-    expect(calcaulateTaxes(1000)).toEqual(150);
-    expect(calcaulateTaxes(0)).toEqual(0);
+    expect(calcaulateTaxes(1000)).tobe(150);
+    expect(calcaulateTaxes(0)).tobe(0);
 })
